@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="keyword" content="春运防疫政策指南">
+  <meta name="description" content="春节回家需要隔离吗？来查查最新政策指南~">
+  <meta name="title" content="春运防疫政策指南">
+  <meta name="image" content="https://huijia.juhekeji.com/img/huijia.png">
+  <meta property="og:image" content="https://huijia.juhekeji.com/img/huijia.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://huijia.juhekeji.com">
+  <meta property="og:title" content="春运防疫政策指南">
+  <meta property="og:description" content="春节回家需要隔离吗？来查查最新政策指南~">
+  <title>春运防疫政策查询</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="style.css?v=1.2">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c222a05e965a074b1e497d3178c74667";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script>
+    function setRootPixel() { var defaultFontSize = 0; function getDefaultFontSize() { if (defaultFontSize) { return defaultFontSize; } document.documentElement.style.fontSize = ''; var temp = document.createElement('div'); temp.style.cssText = 'width:1rem;display:none'; document.head.appendChild(temp); defaultFontSize = +window.getComputedStyle(temp, null).getPropertyValue('width').replace('px', '') || 16; document.head.removeChild(temp); return defaultFontSize; } function getQuery(name) { return (new RegExp('[?&]' + name + '=([^&#\\b]+)').exec(location.search || '') || [])[1]; } function setRootFontSize() { var widthQueryKey = ''; var rem2px = 50; var clientWidth; if (widthQueryKey && (+getQuery(widthQueryKey))) { clientWidth = +getQuery(widthQueryKey); } else { clientWidth = window.innerWidth && document.documentElement.clientWidth ? Math.min(window.innerWidth, document.documentElement.clientWidth) : (window.innerWidth || document.documentElement.clientWidth || (document.body && document.body.clientWidth) || 375); var supportLandscape = false; if (supportLandscape) { var isLandscape = ((screen.orientation && screen.orientation.angle) || window.orientation) / 90 % 2; if (isLandscape) { var clientHeight = window.innerHeight && document.documentElement.clientHeight ? Math.min(window.innerHeight, document.documentElement.clientHeight) : (window.innerHeight || document.documentElement.clientHeight || (document.body && document.body.clientHeight) || 375); clientWidth = Math.max(clientHeight, 350); } } } var htmlFontSizePx = clientWidth / 375 * rem2px; htmlFontSizePx = Math.min(htmlFontSizePx, 64); window.ROOT_FONT_SIZE = htmlFontSizePx; document.documentElement.style.fontSize = (htmlFontSizePx / getDefaultFontSize() * 100) + '%'; } function adjust(immediate) { if (immediate) { setRootFontSize(); return; } setTimeout(setRootFontSize, 30); } if (window.isResponsive === false) { document.documentElement.style.fontSize = '50px'; return; } adjust(true); window.addEventListener('resize', adjust, false); if ('onorientationchange' in window) { window.addEventListener('orientationchange', adjust, false); } } typeof window !== 'undefined' && setRootPixel(); 
+  </script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="top-ban">
+    <a class="logo-a" href="https://juhe.cn" target="_blank" rel="noopener noreferrer">聚合数据</a>
+  </div>
+  <div class="epidemic-main">
+    <h2 class="title">查询出行防疫政策</h2>
+    <p class="desc">鼓励春节期间减少流动和聚集，降低感染风险</p>
+    <div class="city-select">
+      <div class="city-input" id="fromCity">
+        <div class="fromVal city-color">出发地</div>
+        <span></span>
+      </div>
+      <div class="changeCity"></div>
+      <div class="city-input" id="toCity">
+        <div class="toVal city-color">目的地</div>
+        <span></span>
+      </div>
+    </div>
+    <div class="content-main">
+      <div class="outin-wrap" id="outFrom"></div>
+      <div class="outin-wrap" id="inFrom"></div>
+      <div class="outin-wrap" id="inTo"></div>
+      <div class="outin-wrap" id="outTo"></div>
+    </div>
+    <div class="desc-footer">以上政策整理自当地政府等公开发布的信息，如有更新或错漏，请以最新政策为准，建议在出行前咨询当地防疫部门、机场、火车站等</div>
+    <div class="city-code">
+      <p>请准备好进出凭证</p>
+      <div id="fromCode">
+      </div>
+      <div id="toCode"></div>
+    </div>
+    <div class="footer-right">
+      <div class="api-left">
+        <a class="apis" href="https://www.juhe.cn/docs/api/id/566" target="_blank" rel="noopener noreferrer">API接入</a>
+        <a class="contact" href="https://juhe.cn/contact" target="_blank" rel="noopener noreferrer">联系我们</a>
+      </div>
+      <div class="api-right">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备14006450号-3</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="jquery.min.js"></script>
+<script src="weui.min.js"></script>
+<script src="cityData.js"></script>
+<script src="epidemic.js?v=1.2"></script>
+</body>
+</html>
