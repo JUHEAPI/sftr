@@ -6,12 +6,13 @@
 > ～喜欢就给个 **star** 鼓励下吧～
 
 #### 政策信息数据来源：使用聚合数据提供的在线API调用政策信息，并进行展示。
-其政策数据整理自当地政府等公开发布的消息，如有更新或错漏，请以最新政策为准，建议在出行前咨询当地防疫部门、机场、火车站等。
-主要提供地市级（州）有关部门发布的政策信息，暂不覆盖县级官方（县、县级市、地级市辖区等）信息。
+> 其政策数据整理自当地政府等公开发布的消息，如有更新或错漏，请以最新政策为准，建议在出行前咨询当地防疫部门、机场、火车站等。
+> 主要提供地市级（州）有关部门发布的政策信息，暂不覆盖县级官方（县、县级市、地级市辖区等）信息。
 
 #### 聚合API免费开通URL：`https://www.juhe.cn/docs/api/id/566?s=github`
 
-开通聚合API接口后，将会获得一个API的请求Key,只需要将文件`epidemic.js`第19行的key换成你申请到的key，就可以使用啦。
+> 开通聚合API接口后，将会获得一个API的请求Key,只需要将文件`epidemic.js`第19行的key换成你申请到的key，就可以使用啦。
+
 ```js
 // "http:"===window.location.protocol&&(window.location="https://"+window.location.host+window.location.pathname)
 
@@ -37,7 +38,3 @@ var fromCity = document.getElementById('fromCity')
 
 H5效果图：
 ![image](https://github.com/JUHEAPI/covid-19/blob/master/huijia.jpg)
-
-1、政策整理自当地政府等公开发布的消息，如有更新或错漏，请以最新政策为准，建议在出行前咨询当地防疫部门、机场、火车站等。
-
-2、本查询服务主要提供地市级（州）有关部门发布的政策信息，暂不覆盖县级官方（县、县级市、地级市辖区等）信息
