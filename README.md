@@ -16,23 +16,23 @@
 ```js
 // "http:"===window.location.protocol&&(window.location="https://"+window.location.host+window.location.pathname)
 
-var fromCity = document.getElementById('fromCity')
-    toCity = document.getElementById('toCity')
-    fromVal = ''
-    toVal = ''
-    outFrom = document.getElementById('outFrom')
-    inFrom = document.getElementById('inFrom')
-    inTo = document.getElementById('inTo')
-    outTo = document.getElementById('outTo')
-    fromCode = document.getElementById('fromCode')
-    ToCode = document.getElementById('ToCode')
-    from_info = ''
-    to_info = ''
-    fromCodeDes = ''
-    fromCodeImg = ''
-    toCodeDes = ''
-    toCodeImg = ''
-    appKey = 'fa7914d4eec67d44499d2eca5eaea6e1'
+var fromCity = document.getElementById('fromCity'),
+    toCity = document.getElementById('toCity'),
+    fromVal = '',
+    toVal = '',
+    outFrom = document.getElementById('outFrom'),
+    inFrom = document.getElementById('inFrom'),
+    inTo = document.getElementById('inTo'),
+    outTo = document.getElementById('outTo'),
+    fromCode = document.getElementById('fromCode'),
+    ToCode = document.getElementById('ToCode'),
+    from_info = '',
+    to_info = '',
+    fromCodeDes = '',
+    fromCodeImg = '',
+    toCodeDes = '',
+    toCodeImg = '',
+    appKey = 'fa7914d4eec67d44499d2eca5eaea6e1';
 
 ```
 
